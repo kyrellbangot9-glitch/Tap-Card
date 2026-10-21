@@ -1,0 +1,11 @@
+# Security headers for Cloudflare Pages and Netlify (same file format).
+# BEFORE DEPLOYING: replace YOUR-PROJECT with your Supabase project id (the part before .supabase.co).
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' https: data:; connect-src 'self' https://ykiicildyuailqvfxmoo.supabase.co; base-uri 'none'; form-action 'self'; frame-ancestors 'none'
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  X-Frame-Options: DENY
+/admin/*
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-store
